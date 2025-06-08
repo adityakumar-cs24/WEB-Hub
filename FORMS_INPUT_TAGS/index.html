@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Let's Learn It.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>SBI Savings Bank Account Opening Form.</h1>
+    <form method="post">
+        <div class="section">
+            <h2>1. Personal Details</h2>
+
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+            </div>
+
+            <div>
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="">-- Select --</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="marital status">Marital Status</label>
+                <select name="marital status" id="marital status" required>
+                    <option value="">-- Select --</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                    <option>Widowed</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nationality">Nationality</label>
+                <select name="nationality" id="nationality" required>
+                    <option value="">-- Select --</option>
+                    <option>Indian</option>
+                    <option>American</option>
+                    <option>British</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="father_name">Father's Name</label>
+                <input type="text" id="father_name" name="father_name" placeholder="Enter Your Father's Name" required>
+            </div>
+
+            <div>
+                <label for="mother_name">Mother's Name</label>
+                <input type="text" id="mother_name" name="mother_name" placeholder="Enter Your Mother's Name" required>
+            </div>
+
+            <div>
+                <label for="address">Permanent Address</label>
+                <textarea name="address" id="address" rows="3" required></textarea>
+            </div>
+
+            <div>
+                <label for="correspondence">Correspondence Address</label>
+                <textarea name="correspondence" id="correspondence" rows="3" required></textarea>
+            </div>
+
+            <div>
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile Number" required
+                    pattern="[0-9]{10}">
+            </div>
+
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Identity and Address Proof</h2>
+            <div>
+                <label for="aadhaar">Aadhaar Card</label>
+                <input type="text" id="aadhaar" name="aadhaar" placeholder="Enter Your Aadhaar Number" required
+                    pattern="[0-9]{12}">
+            </div>
+
+            <div>
+                <label for="pan">Pan Card</label>
+                <input type="text" id="pan" name="pan" placeholder="Enter Your PAN Number" required
+                    pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Account Preferences</h2>
+            <div>
+                <label for="mode">Mode of Operation</label>
+                <select name="mode" id="mode" required>
+                    <option value="">-- Select --</option>
+                    <option>Single</option>
+                    <option>Joint</option>
+                    <option>Either or Survivor</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nominee">Nominee Name</label>
+                <input type="text" id="nominee" name="nominee" placeholder="Enter Nominee Name" required>
+            </div>
+
+            <div>
+                <label for="relation">Relation</label>
+                <select name="relation" id="relation" required>
+                    <option value="">-- Select --</option>
+                    <option>Father</option>
+                    <option>Mother</option>
+                    <option>Brother</option>
+                    <option>Sister</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="address">Nominee Address</label>
+                <textarea name="address" id="address" rows="3" required></textarea>
+            </div>
+
+            <div>
+                <label for="account_type">Account Type</label>
+                <select name="account_type" id="account_type" required>
+                    <option value="">-- Select --</option>
+                    <option>Saving</option>
+                    <option>Current</option>
+                    <option>Fixed Deposit</option>
+                </select>
+            </div>
+            <div>
+                <label>Select Services</label><br>
+                <input type="checkbox" name="services" value="atm"> ATM/Debit Card<br>
+                <input type="checkbox" name="services" value="netbanking"> Internet Banking<br>
+                <input type="checkbox" name="services" value="sms"> SMS Alerts
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2>4. Other Declarations</h2>
+
+            <fieldset>
+                <legend><strong>Other Required Declarations:</strong></legend>
+
+                <div>
+                    <input type="checkbox" id="fatca" name="declaration" value="FATCA/CRS Declaration">
+                    <label for="fatca">FATCA/CRS Declaration (for foreign nationals or NRIs)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="pmjdy" name="declaration" value="PMJDY Declaration">
+                    <label for="pmjdy">Declaration of not having another account under PMJDY</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="signature" name="declaration" value="Signature/Thumb Impression">
+                    <label for="signature">Signature / Thumb Impression</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="photos" name="declaration" value="Passport-sized Photos">
+                    <label for="photos">Passport-sized Photographs (usually 2)</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="section">
+            <h2>5. Declaration</h2>
+            <div>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration">I hereby declare that the information provided is true and correct to the best
+                    of my knowledge.</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <button type="submit" class="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
