@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Selectors</title>
+    <style>
+        /* Element Selector */
+        div {
+            background-color: red;
+        }
+
+
+        /* Class Selector */
+        .yellow {
+            background-color: aquamarine;
+        }
+
+        /* ID Selector */
+        #green {
+            background-color: pink;
+        }
+
+        /* Child Selector */
+        div > p {
+            background-color: rgb(218, 114, 247);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Descendant Selector */ 
+        div p {
+            background-color: yellow;
+            color: cadetblue;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            background-color: lightgreen;
+            color: red;
+        }
+
+        a:visited {
+            background-color: rgb(5, 253, 241);
+            color: rgb(255, 0, 0);
+        }
+
+        a:link {
+            /* background-color: rgb(128, 137, 240);  */
+            /* color: tomato; */
+        }
+
+        a:active {
+            background-color: lightgray;
+            color: black;
+        }
+
+        p:first-child {
+            background-color: lightblue;
+            color: darkblue;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        I am 1st div.
+
+        <p>
+            I am para inside 1st div.
+        </p>
+
+        <p>
+            I am 2nd para inside 1st div.
+        </p>
+    </div>
+    
+    <div class="yellow">
+        I am 2nd div.
+        <article>
+            <p>
+                I am para inside article of 2nd div.
+            </p>
+
+            <p>
+                I am 2nd para inside article of 2nd div.
+            </p>
+        </article>
+    </div>
+
+    <div class="green" id="green">
+        I am 3rd div.
+    </div>
+
+    
+    <a href="https://www.google.com">Open Google</a>
+    <a href="https://www.instagram.com">Open Instagram</a>
+    <a href="https://www.codewithharry.com">Open CodeWithHarry</a>
+    
+</body>
+</html>
