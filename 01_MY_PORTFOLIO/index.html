@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya - Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        /* ===== GLOBAL RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ===== NAVBAR ===== */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #120034;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        nav ul li a:hover {
+            color: rgb(112, 19, 199);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+            padding: 0 5%;
+        }
+
+        .firstSection>div {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .leftSection {
+            font-size: clamp(1.4rem, 2.5vw, 2rem);
+        }
+
+        .rightSection img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .name-color,
+        #element {
+            color: rgb(151, 7, 147);
+        }
+
+        /* ===== BUTTONS ===== */
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px;
+            background-color: #120034;
+            color: white;
+            border: 2px solid white;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: whitesmoke;
+            color: #120034;
+        }
+
+        /* ===== WORK EXPERIENCE ===== */
+        .secondSection {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .secondSection h1 {
+            margin-bottom: 30px;
+        }
+
+        .box {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .vertical {
+            background-color: #120034;
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            text-align: center;
+        }
+
+        .vertical img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .vertical-title {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .vertical-desc {
+            font-size: 12px;
+            color: gray;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #120034;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 60px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin: 8px 0;
+        }
+
+        .footer ul li a {
+            color: gray;
+            text-decoration: none;
+        }
+
+        .footer-rights {
+            text-align: center;
+            padding: 15px;
+            color: gray;
+        }
+
+        /* ===== RESPONSIVE FIXES ===== */
+        @media (max-width: 768px) {
+
+            /* Navbar stacking */
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            nav ul li {
+                margin: 6px 0;
+            }
+
+            /* Hero stacking */
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            /* Buttons column */
+            .buttons {
+                flex-direction: column;
+            }
+
+            /* Work experience cards */
+            .box {
+                justify-content: center;
+            }
+            
+
+            /* Footer padding */
+            .footer {
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Aditya's Portfolio</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="name-color">Aditya</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                    <button class="btn">Visit Linkedin</button>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.png" alt="Developer Illustration">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="html.png">
+                    <div class="vertical-title">HTML</div>
+                    <div class="vertical-desc">Built multiple responsive websites</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="css.png">
+                    <div class="vertical-title">CSS</div>
+                    <div class="vertical-desc">Styled layouts with Flexbox & Grid</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="js2.png">
+                    <div class="vertical-title">JavaScript</div>
+                    <div class="vertical-desc">Interactive UI & games</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="java.png">
+                    <div class="vertical-title">Java</div>
+                    <div class="vertical-desc">OOP & DSA basics</div>
+                </div>
+
+                <div class="vertical">
+                    <img src="python.png">
+                    <div class="vertical-title">Python</div>
+                    <div class="vertical-desc">Scripts & problem solving</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Aditya's Portfolio</h3>
+                <p>Made with ❤️ by Aditya</p>
+            </div>
+            <div class="footer-second">
+                <h3>Main</h3>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i> <a href="#home">Home</a></li>
+                    <li><i class="fas fa-info-circle"></i> <a href="#about">About</a></li>
+                    <li><i class="fas fa-cogs"></i> <a href="#services">Services</a></li>
+                    <li><i class="fas fa-code"></i> <a href="#projects">Projects</a></li>
+                    <li><i class="fas fa-comment-dots"></i> <a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Technologies</h3>
+                <ul>
+                    <li><i class="fab fa-html5"></i> <a href="#html">HTML</a></li>
+                    <li><i class="fab fa-css3-alt"></i> <a href="#css">CSS</a></li>
+                    <li><i class="fab fa-js"></i> <a href="#javascript">JAVASCRIPT</a></li>
+                    <li><i class="fas fa-coffee"></i> <a href="#java">JAVA</a></li>
+                    <li><i class="fab fa-python"></i> <a href="#python">PYTHON</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <h3>Social</h3>
+                <ul>
+                    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/adityakumar-cs24"
+                            target="_blank">GitHub</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i> <a
+                            href="https://www.linkedin.com/in/aditya-kumar-6971a831b/" target="_blank">LinkedIn</a></li>
+                    <li><i class="fa-regular fa-envelope"></i> <a href="mailto:aditya.cse24@gmail.com">Email</a></li>
+                    <li><i class="fa-brands fa-instagram"></i> <a
+                            href="https://www.instagram.com/aditya_._.pandey?igsh=NTB5bjBodTB6ZDVo">Instagram</a></li>
+                    <li><i class="fa-brands fa-x-twitter"></i> <a
+                            href="https://x.com/Eduaditya3?t=XF5MXm3CXZeCujITdM9HLA&s=08">Twitter (X)</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            © 2025 Aditya | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        new Typed('#element', {
+            strings: ['Web Developer,', 'Programmer,', 'Tech Enthusiast.'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
